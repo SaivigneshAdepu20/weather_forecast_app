@@ -6,7 +6,7 @@ import 'widget/main_widget.dart';
 
 Future<WeatherInfo> fetchWeather() async {
   const cityName = 'mumbai';
-  const apiKey = '9827dbdffd3a6322d1cdafc961e425de';
+  const apiKey = key;
   const requestUrl =
       'http://api.openweathermap.org/data/2.5/weather?q=$cityName&units=metric&appid=$apiKey';
   final response = await http.get(Uri.parse(requestUrl));
